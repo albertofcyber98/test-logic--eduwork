@@ -95,11 +95,17 @@ const nomor5 = () => {
 
 const nomor6 = () => {
     let dataArray = [1, 4, 7, 9, 12];
-
+    let low = 2
+    let high = 15
+    dataArray.shift()
+    console.log(dataArray)
 }
 
 const nomor7 = () => {
     let dataArray = [1, 4, 7, 9, 12];
+    let low = 2
+    let high = 15
+    dataArray.shift()
     console.log(dataArray.length)
 }
 
@@ -141,4 +147,4 @@ const nomor10 = () => {
         console.log(`${inputanTahun} bukan tahun kabisat`)
     }
 }
-nomor8()
+nomor7()
