@@ -27,4 +27,22 @@ const nomor4 = () => {
     a = a - b
     console.log(`a = ${a}, b = ${b}`)
 }
-nomor4()
+
+const nomor5 = () => {
+    let inputan = 104
+    if (inputan > 100 || inputan < 1) {
+        console.log("Silahkan masukkan bilangan 1-100")
+    }
+}
+
+const
+
+const nomor10 = () => {
+    let inputanTahun = 2024
+    if (inputanTahun % 4 === 0) {
+        console.log(`${inputanTahun} adalah tahun kabisat`)
+    } else if(inputanTahun%4 !== 0){
+        console.log(`${inputanTahun} bukan tahun kabisat`)
+    }
+}
+nomor10()
