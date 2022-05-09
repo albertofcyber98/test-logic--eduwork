@@ -19,6 +19,22 @@ const nomor2 = () => {
     console.log(output)
 }
 
+const nomor3 = () => {
+    let dataInputan = "9.86-A5.321";
+    let dataAngkaNormal = dataInputan.match(/[0-9]/g)
+    let output1 = dataAngkaNormal.join("")
+    let dataNol = ""
+    console.log(output1);
+    for (let angkaAwal = 0; angkaAwal < dataAngkaNormal.length; angkaAwal++){
+        let parameter = dataAngkaNormal.length - (angkaAwal+1);
+        for (parameter; parameter > 0; parameter--){
+            dataNol += "0"
+        }
+        console.log(`${dataAngkaNormal[angkaAwal]}` + dataNol)
+        dataNol = ""
+    }
+}
+
 const nomor4 = () => {
     let a = 3
     let b = 7
@@ -33,6 +49,11 @@ const nomor5 = () => {
     if (inputan > 100 || inputan < 1) {
         console.log("Silahkan masukkan bilangan 1-100")
     }
+}
+
+const nomor6 = () => {
+    let dataArray = [1, 4, 7, 9, 12];
+
 }
 
 const nomor9 = () => {
@@ -58,4 +79,4 @@ const nomor10 = () => {
         console.log(`${inputanTahun} bukan tahun kabisat`)
     }
 }
-nomor9()
+nomor3()
