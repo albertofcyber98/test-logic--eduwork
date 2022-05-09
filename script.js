@@ -35,7 +35,20 @@ const nomor5 = () => {
     }
 }
 
-const
+const nomor9 = () => {
+    let dataArray = [4, 2, 6, 88, 3, 11]
+    let low = dataArray[0]
+    let high = dataArray[0]
+    for (let minArray = 1; minArray < dataArray.length; minArray++){
+        if (dataArray[minArray] < low) {
+            low = dataArray[minArray]
+        }
+        if (dataArray[minArray] > high) {
+            high = dataArray[minArray]
+        }
+    }
+    console.log(`Low : ${low}, High : ${high}`)
+}
 
 const nomor10 = () => {
     let inputanTahun = 2024
@@ -45,4 +58,4 @@ const nomor10 = () => {
         console.log(`${inputanTahun} bukan tahun kabisat`)
     }
 }
-nomor10()
+nomor9()
