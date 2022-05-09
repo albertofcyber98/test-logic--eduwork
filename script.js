@@ -45,50 +45,103 @@ const nomor4 = () => {
 }
 
 const nomor5 = () => {
-    let inputan = 23
+    let inputan = 39
     let tampungString = ""
-    if (inputan > 100 || inputan < 1) {
-        console.log("Silahkan masukkan bilangan 1-100")
-    }
     let tampungData = Array.from(String(inputan), Number)
     for (let angkaAwal = 0; angkaAwal < tampungData.length; angkaAwal++){
-        if (tampungData[angkaAwal] == 1 && tampungData.length == 2 ) {
-            tampungString += "Satu"
-        } else if (tampungData[angkaAwal] == 1 && tampungData.length == 1) {
-            tampungString += "Sepuluh "
-        } else if (tampungData[angkaAwal] == 2 && tampungData[angkaAwal] == 2) {
-            tampungString += "Dua"
-        } else if (tampungData[angkaAwal] == 2 && tampungData.length == 1) {
-            tampungString += "Dua Puluh "
-        }else if (tampungData[angkaAwal] == 3 && tampungData[angkaAwal] == 2) {
-            tampungString += "Tiga"
-        } else if (tampungData[angkaAwal] == 3 && tampungData.length == 2) {
-            tampungString += "Tiga Puluh "
-        }else if (tampungData[angkaAwal] == 4 && tampungData.length == 2) {
-            tampungString += "Empat Puluh "
-        } else if (tampungData[angkaAwal] == 4 && tampungData.length == 1) {
-            tampungString += "Empat"
-        }else if (tampungData[angkaAwal] == 5 && tampungData.length == 2) {
-            tampungString += "Lima Puluh "
-        } else if (tampungData[angkaAwal] == 5 && tampungData.length == 1) {
-            tampungString += "Lima"
-        }else if (tampungData[angkaAwal] == 6 && tampungData.length == 2) {
-            tampungString += "Enam Puluh "
-        } else if (tampungData[angkaAwal] == 6 && tampungData.length == 1) {
-            tampungString += "Enam"
-        }else if (tampungData[angkaAwal] == 7 && tampungData.length == 2) {
-            tampungString += "Tujuh Puluh "
-        } else if (tampungData[angkaAwal] == 7 && tampungData.length == 1) {
-            tampungString += "Tujuh"
-        }else if (tampungData[angkaAwal] == 8 && tampungData.length == 2) {
-            tampungString += "Tujuh Puluh "
-        } else if (tampungData[angkaAwal] == 8 && tampungData.length == 1) {
-            tampungString += "Tujuh"
-        }else if (tampungData[angkaAwal] == 9 && tampungData.length == 2) {
-            tampungString += "Tujuh Puluh "
-        } else if (tampungData[angkaAwal] == 9 && tampungData.length == 1) {
-            tampungString += "Tujuh"
+        if (tampungData[angkaAwal] == 9) {
+            if (tampungData.length == 2 && tampungData.indexOf(9) == 0) {
+                tampungString += "Sembilan Puluh "
+            } else if(tampungData.length == 1){
+                tampungString += "Sembilan"
+            }else if(tampungData.length == 2 && tampungData.indexOf(9) == 1){
+                tampungString += "Sembilan"
+            }
+        }else if (tampungData[angkaAwal] == 8) {
+            if (tampungData.length == 2 && tampungData.indexOf(8) == 0) {
+                tampungString += "Delapan Puluh "
+            } else if(tampungData.length == 1){
+                tampungString += "Delapan"
+            }else if(tampungData.length == 2 && tampungData.indexOf(8) == 1){
+                tampungString += "Delapan"
+            }
+        }else if (tampungData[angkaAwal] == 7) {
+            if (tampungData.length == 2 && tampungData.indexOf(7) == 0) {
+                tampungString += "Tujuh Puluh "
+            } else if(tampungData.length == 1){
+                tampungString += "Tujuh"
+            }else if(tampungData.length == 2 && tampungData.indexOf(7) == 1){
+                tampungString += "Tujuh"
+            }
+        }else if (tampungData[angkaAwal] == 6) {
+            if (tampungData.length == 2 && tampungData.indexOf(6) == 0) {
+                tampungString += "Enam Puluh "
+            } else if(tampungData.length == 1){
+                tampungString += "Enam"
+            }else if(tampungData.length == 2 && tampungData.indexOf(6) == 1){
+                tampungString += "Enam"
+            }
+        }else if (tampungData[angkaAwal] == 5) {
+            if (tampungData.length == 2 && tampungData.indexOf(5) == 0) {
+                tampungString += "Lima Puluh "
+            } else if(tampungData.length == 1){
+                tampungString += "Lima"
+            }else if(tampungData.length == 2 && tampungData.indexOf(5) == 1){
+                tampungString += "Lima"
+            }
+        }else if (tampungData[angkaAwal] == 4) {
+            if (tampungData.length == 2 && tampungData.indexOf(4) == 0) {
+                tampungString += "Empat Puluh "
+            } else if(tampungData.length == 1){
+                tampungString += "Empat"
+            }else if(tampungData.length == 2 && tampungData.indexOf(4) == 1){
+                tampungString += "Empat"
+            }
+        }else if (tampungData[angkaAwal] == 3) {
+            if (tampungData.length == 2 && tampungData.indexOf(3) == 0) {
+                tampungString += "Tiga Puluh "
+            } else if(tampungData.length == 1){
+                tampungString += "Tiga"
+            }else if(tampungData.length == 2 && tampungData.indexOf(3) == 1){
+                tampungString += "Tiga"
+            }
+        }else if (tampungData[angkaAwal] == 2) {
+            if (tampungData.length == 2 && tampungData.indexOf(2) == 0) {
+                tampungString += "Dua Puluh "
+            } else if(tampungData.length == 1 ){
+                tampungString += "Dua"
+            }else if(tampungData.length == 2 && tampungData.indexOf(2) == 1){
+                tampungString += "Dua"
+            }
+        }else if (tampungData[angkaAwal] == 1) {
+            if (tampungData.length == 2 && tampungData[1] == 0) {
+                tampungString += "Sepuluh"
+            } else if(tampungData.length == 2 && tampungData.indexOf(1) == 1){
+                tampungString += "Satu"
+            }
         }
+    }
+    if(tampungData.length == 2 && tampungData[1] == 1){
+        tampungString += "Sebelas"
+    }else if(tampungData.length == 2 && tampungData.indexOf(1) == 0 && tampungData[1] == 2){
+        tampungString += " Belas"
+    }else if(tampungData.length == 2 && tampungData.indexOf(1) == 0 && tampungData[1] == 3){
+        tampungString += " Belas"
+    }else if(tampungData.length == 2 && tampungData.indexOf(1) == 0 && tampungData[1] == 4){
+        tampungString += " Belas"
+    }else if(tampungData.length == 2 && tampungData.indexOf(1) == 0 && tampungData[1] == 5){
+        tampungString += " Belas"
+    }else if(tampungData.length == 2 && tampungData.indexOf(1) == 0 && tampungData[1] == 6){
+        tampungString += " Belas"
+    }else if(tampungData.length == 2 && tampungData.indexOf(1) == 0 && tampungData[1] == 7){
+        tampungString += " Belas"
+    }else if(tampungData.length == 2 && tampungData.indexOf(1) == 0 && tampungData[1] == 8){
+        tampungString += " Belas"
+    }else if(tampungData.length == 2 && tampungData.indexOf(1) == 0 && tampungData[1] == 9){
+        tampungString += " Belas"
+    }
+    if (inputan > 100 || inputan < 1) {
+        tampungString = "Silahkan masukkan bilangan 1-100"
     }
     console.log(tampungString)
 }
@@ -147,4 +200,14 @@ const nomor10 = () => {
         console.log(`${inputanTahun} bukan tahun kabisat`)
     }
 }
+
+nomor1()
+nomor2()
+nomor3()
+nomor4()
+nomor5()
+nomor6()
 nomor7()
+nomor8()
+nomor9()
+nomor10()
